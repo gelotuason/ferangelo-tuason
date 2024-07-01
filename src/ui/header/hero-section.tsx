@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <section className="container h-screen grid place-content-center">
+        <header className="container h-screen grid place-content-center">
             <h1 className="scroll-m-20 text-4xl font-bold lg:text-8xl">
                 Transforming Ideas Into <span className="text-accent">Reality</span> Through Code.
             </h1>
@@ -18,6 +18,6 @@ export default function HeroSection() {
                     <DoubleArrowDownIcon className="w-8 h-8 rounded-full border-t-2 border-b-2 border-accent text-accent p-1" />
                 </Link>
             </div>
-        </section>
+        </header>
     )
 }

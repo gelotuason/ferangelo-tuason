@@ -1,4 +1,4 @@
-import Description from "./description";
+import ServicesDescripton from "./services-desc";
 import { WebDevelopment, CustomSoftwareSolutions, ApiIntegration, ResponsiveWebDesign } from "./my-services";
 
 export default function ServicesSection() {
@@ -8,7 +8,7 @@ export default function ServicesSection() {
             <div className="grid grid-rows-2 mt-6 gap-2 h-full">
                 <div className="grid grid-cols-2 gap-2">
                     <div className="cols-span-1">
-                        <Description />
+                        <ServicesDescripton />
                     </div>
                     <div className="cols-span-1">
                         <WebDevelopment />

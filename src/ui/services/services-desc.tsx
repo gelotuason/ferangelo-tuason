@@ -1,4 +1,4 @@
-export default function Description() {
+export default function ServicesDescription() {
     return (
         <div className="h-max border-l-4 ps-3 border-accent">
             <p>

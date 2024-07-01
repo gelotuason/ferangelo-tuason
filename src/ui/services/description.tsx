@@ -4,7 +4,7 @@ export default function Description() {
             <p>
                 I offer a range of services including web development, custom software solutions, and API integration.
                 With my expertise in the latest technologies and best practices, I aim to deliver solutions that meet
-                your needs and exceed your expectations.
+                your <span className="text-accent">needs</span> and exceed your <span className="text-accent">expectations</span>.
             </p>
         </div>
     )

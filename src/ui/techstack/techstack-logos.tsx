@@ -15,19 +15,19 @@ import tailwindcss from '../../../public/tailwind-css.png';
 import Image from 'next/image';
 
 const imageProperties = [
+    { src: html, width: 30, height: 30 },
+    { src: css, width: 30, height: 30 },
+    { src: javascript, width: 30, height: 30 },
+    { src: react, width: 30, height: 30 },
+    { src: next, width: 30, height: 30 },
+    { src: firebase, width: 30, height: 30 },
+    { src: tailwindcss, width: 30, height: 30 },
+    { src: shadcn, width: 30, height: 30 },
+    { src: materialUI, width: 30, height: 30 },
     { src: bootstrap, width: 30, height: 30 },
     { src: chakraUI, width: 30, height: 30 },
-    { src: css, width: 30, height: 30 },
-    { src: firebase, width: 30, height: 30 },
     { src: git, width: 30, height: 30 },
     { src: github, width: 30, height: 30 },
-    { src: html, width: 30, height: 30 },
-    { src: javascript, width: 30, height: 30 },
-    { src: materialUI, width: 30, height: 30 },
-    { src: next, width: 30, height: 30 },
-    { src: react, width: 30, height: 30 },
-    { src: shadcn, width: 30, height: 30 },
-    { src: tailwindcss, width: 30, height: 30 },
 ]
 
 

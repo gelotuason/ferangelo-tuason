@@ -1,6 +1,6 @@
 export default function MyStory() {
     return (
-        <div className="border-l-4 ps-3 flex flex-col border-accent gap-10 mt-6">
+        <div className="h-max border-l-4 ps-3 flex flex-col border-accent gap-10 mt-6">
             <p className="text-xl">
                 In 2021, I began my career as an Automation Engineer in the manufacturing industry,
                 where I expanded my skills and knowledge in both technical and organizational tasks.

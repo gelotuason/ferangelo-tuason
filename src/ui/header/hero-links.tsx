@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PaperPlaneIcon } from "@radix-ui/react-icons";
+import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
 
 export function LetsTalk() {
     return (
@@ -10,5 +11,13 @@ export function LetsTalk() {
                 Let's Talk
             </Link>
         </Button>
+    )
+}
+
+export function ScrollDown() {
+    return (
+        <Link href='/'>
+            <DoubleArrowDownIcon className="w-8 h-8 rounded-full border-t-2 border-b-2 border-accent text-accent p-1" />
+        </Link>
     )
 }

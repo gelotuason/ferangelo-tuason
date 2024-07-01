@@ -1,6 +1,4 @@
-import { LetsTalk } from "./hero-links";
-import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
+import { LetsTalk, ScrollDown } from "./hero-links";
 
 export default function HeroSection() {
     return (
@@ -14,9 +12,7 @@ export default function HeroSection() {
             </h2>
             <div className="mt-20 flex items-center gap-4">
                 <LetsTalk />
-                <Link href='/'>
-                    <DoubleArrowDownIcon className="w-8 h-8 rounded-full border-t-2 border-b-2 border-accent text-accent p-1" />
-                </Link>
+                <ScrollDown />
             </div>
         </header>
     )

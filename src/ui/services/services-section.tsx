@@ -3,7 +3,7 @@ import { WebDevelopment, CustomSoftwareSolutions, ApiIntegration, ResponsiveWebD
 
 export default function ServicesSection() {
     return (
-        <section className="container h-max">
+        <section className="container h-max mb-28">
             <h1 className="font-bold text-6xl">Services I offer<span className="text-accent">.</span></h1>
             <div className="grid grid-rows-2 mt-6 gap-2 h-full">
                 <div className="grid grid-cols-2 gap-2">

@@ -35,13 +35,13 @@ export default function Nav() {
                 </h2>
             </Link>
             {
-                isDesktop ? <DesktopNav /> : <MobileNav />
+                isDesktop ? <DesktopNavMenu /> : <MobileNavMenu />
             }
         </nav>
     )
 }
 
-function DesktopNav() {
+function DesktopNavMenu() {
     const pathname = usePathname();
 
     return (
@@ -68,7 +68,7 @@ function DesktopNav() {
     )
 }
 
-function MobileNav() {
+function MobileNavMenu() {
     const pathname = usePathname();
     const [open, setOpen] = useState(false);
 

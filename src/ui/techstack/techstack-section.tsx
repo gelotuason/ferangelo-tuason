@@ -7,7 +7,7 @@ export default function TechstackSection() {
             <h1 className="font-bold text-6xl">Tech Stack<span className="text-accent">.</span></h1>
             <TechstackDescription />
             <div className="grid justify-center mt-10">
-                <h2 className="text-center">These are the tools I mostly used:</h2>
+                <h2 className="text-center">These are the tools I used the most:</h2>
                 <TechstackLogos />
             </div>
         </section>

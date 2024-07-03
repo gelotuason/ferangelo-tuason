@@ -1,4 +1,4 @@
-import { DownloadCV } from "./about-links";
+import { DownloadCvLink } from "./about-links";
 import MyStory from "./my-story";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-8">
                 <div className="cols-span-1 mx-auto">
                     <MyStory />
-                    <DownloadCV />
+                    <DownloadCvLink />
                 </div>
                 <div className="cols-span-1 mx-auto my-auto">
                     <Image

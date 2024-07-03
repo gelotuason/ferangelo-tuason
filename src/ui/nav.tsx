@@ -19,9 +19,10 @@ import { useState } from "react";
 
 const links = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' }
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' }
 ]
 
 export default function Nav() {

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
     return (
-        <section className="container h-max mb-28">
+        <section id="about" className="container h-max mb-28">
             <h1 className="font-bold text-6xl">About<span className="text-accent">.</span></h1>
             <div className="grid grid-cols-2 gap-8">
                 <div className="cols-span-1 mx-auto">

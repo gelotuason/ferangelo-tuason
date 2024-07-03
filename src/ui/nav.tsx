@@ -4,7 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMediaQuery } from "@/hooks/media-query";
-import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import {
     Drawer,
     DrawerClose,
@@ -54,7 +54,7 @@ function DesktopNavMenu() {
                             key={link.name}
                             href={link.href}
                             className={clsx(
-                                'hover:text-accent px-4 py-2',
+                                'hover:text-accent px-4 py-2 small-text',
                                 {
                                     'text-accent': pathname === link.href
                                 }
@@ -91,7 +91,7 @@ function MobileNavMenu() {
                                 href={link.href}
                                 onClick={() => setOpen(false)}
                                 className={clsx(
-                                    'hover:text-accent w-max mx-auto px-4 py-2',
+                                    'hover:text-accent w-max mx-auto px-4 py-2 small-text',
                                     {
                                         'text-accent': pathname === link.href
                                     }

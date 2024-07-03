@@ -28,7 +28,7 @@ export default function Nav() {
     const isDesktop = useMediaQuery('(min-width: 768px)');
 
     return (
-        <nav className="container relative z-10 flex items-center justify-between">
+        <nav className="container relative mt-2 z-10 flex items-center justify-between">
             <Link href='/'>
                 <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                     Gelo<span className="text-accent">.</span>

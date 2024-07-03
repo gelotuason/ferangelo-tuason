@@ -14,7 +14,7 @@ const footerLinks = [
 
 export default function Footer() {
     return (
-        <footer className="border-t border-secondary py-4 h-max container relative flex flex-col items-center justify-center">
+        <footer className="bg-secondary-foreground py-4 h-max container relative flex flex-col items-center justify-center">
             <FooterMenu />
             <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight mt-4 mb-4">
                 Gelo<span className="text-accent">.</span>

@@ -78,13 +78,10 @@ function MobileNavMenu() {
             <DrawerTrigger>
                 <HamburgerMenuIcon className="w-6 h-6" />
             </DrawerTrigger>
-            <DrawerContent>
+            <DrawerContent className="pb-4">
                 <DrawerHeader>
-                    <DrawerTitle />
-                    <DrawerDescription />
-                    <DrawerClose className="flex justify-start">
-                        <Cross1Icon className="w-6 h-6" />
-                    </DrawerClose>
+                    <DrawerTitle className="sr-only" />
+                    <DrawerDescription className="sr-only" />
                 </DrawerHeader>
                 {
                     links.map(link => {
@@ -94,7 +91,7 @@ function MobileNavMenu() {
                                 href={link.href}
                                 onClick={() => setOpen(false)}
                                 className={clsx(
-                                    'hover:text-accent flex justify-center px-4 py-2',
+                                    'hover:text-accent w-max mx-auto px-4 py-2',
                                     {
                                         'text-accent': pathname === link.href
                                     }

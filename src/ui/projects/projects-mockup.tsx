@@ -3,13 +3,13 @@ import { LiveURL, SourceCode } from "./project-links";
 
 const imageProperties = [
     {
-        src: '/projects/emd.png'
+        name: 'Employee Management Dashboard', src: '/projects/emd.png'
     },
     {
-        src: '/projects/sma.png'
+        name: 'Social Media Application', src: '/projects/sma.png'
     },
     {
-        src: '/projects/valosource.png'
+        name: 'Valosource', src: '/projects/valosource.png'
     }
 ]
 
@@ -17,7 +17,7 @@ export default function ProjectsMockup() {
     return (
         imageProperties.map(property => {
             return (
-                <div className="group relative hover:scale-105 transition-scale duration-150">
+                <div key={property.name} className="group relative hover:scale-105 transition-scale duration-150">
                     <Image
                         src={property.src}
                         width={500}

@@ -32,7 +32,7 @@ export default function ProjectsMockup() {
                         width={500}
                         height={500}
                         alt="Project Mockup"
-                        className="object-cover rounded-xl"
+                        className="object-cover rounded-xl w-full"
                     />
                     <div className="absolute inset-0 text-primary bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 gap-2 flex flex-col justify-center items-center transition-opacity duration-150 rounded-xl">
                         <LiveURL liveUrl={property.liveUrl} />

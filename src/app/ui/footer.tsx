@@ -14,7 +14,7 @@ const footerLinks = [
 
 export default function Footer() {
     return (
-        <footer className="bg-secondary-foreground py-4 h-max container relative flex flex-col items-center justify-center">
+        <footer className="bg-secondary-foreground py-4 h-max container relative grid place-items-center">
             <FooterMenu />
             <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight mt-4 mb-4">
                 Gelo<span className="text-accent">.</span>
@@ -35,7 +35,7 @@ function FooterMenu() {
                         key={link.name}
                         href={link.href}
                         className={clsx(
-                            'hover:text-accent px-4 py-2 small-text',
+                            'hover:text-accent inline-block px-4 py-2 small-text',
                             {
                                 'text-accent': pathname === link.href
                             }

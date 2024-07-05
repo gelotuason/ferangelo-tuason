@@ -10,7 +10,7 @@ export default function HeroSection() {
                 Hello there! I’m Gelo, a Front End Developer creating
                 scalable, efficient, and user-friendly web applications.
             </h2>
-            <div className="mt-20 flex items-center gap-4">
+            <div className="mt-16 flex items-center gap-4">
                 <LetsTalk />
                 <ScrollDown />
             </div>

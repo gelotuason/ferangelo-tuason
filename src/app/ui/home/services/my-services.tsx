@@ -2,7 +2,7 @@ import { CodeIcon } from "@radix-ui/react-icons"
 
 export function WebDevelopment() {
     return (
-        <div className="grid gap-4 text-center bg-secondary rounded-lg p-4">
+        <div className="grid gap-4 text-center bg-secondary rounded-lg p-4 w-full h-full">
             <h2 className="small-text flex justify-center items-center gap-2 font-bold">
                 <CodeIcon className="w-8 h-8 rounded-full bg-primary p-1" />
                 WEB DEVELOPMENT
@@ -17,7 +17,7 @@ export function WebDevelopment() {
 
 export function CustomSoftwareSolutions() {
     return (
-        <div className="grid gap-4 text-center bg-accent rounded-lg p-4">
+        <div className="grid gap-4 text-center bg-accent rounded-lg p-4 w-full h-full">
             <h2 className="small-text flex justify-center items-center gap-2 font-bold text-">
                 <CodeIcon className="w-8 h-8 rounded-full text-accent bg-foreground p-1" />
                 CUSTOM SOFTWARE SOLUTIONS
@@ -32,7 +32,7 @@ export function CustomSoftwareSolutions() {
 
 export function ApiIntegration() {
     return (
-        <div className="grid gap-4 text-center bg-secondary rounded-lg p-4">
+        <div className="grid gap-4 text-center bg-secondary rounded-lg p-4 w-full">
             <h2 className="small-text flex justify-center items-center gap-2 font-bold">
                 <CodeIcon className="w-8 h-8 rounded-full bg-primary p-1" />
                 API INTEGRATION
@@ -46,7 +46,7 @@ export function ApiIntegration() {
 
 export function ResponsiveWebDesign() {
     return (
-        <div className="grid gap-4 text-center bg-accent rounded-lg p-4">
+        <div className="grid gap-4 text-center bg-accent rounded-lg p-4 w-full">
             <h2 className="small-text flex justify-center items-center gap-2 font-bold">
                 <CodeIcon className="w-8 h-8 rounded-full text-accent bg-foreground p-1" />
                 RESPONSIVE WEB DESIGN

@@ -5,9 +5,9 @@ import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
 
 export function LetsTalk() {
     return (
-        <Button variant='default' className="w-max" asChild>
+        <Button variant='default' size="lg" className="w-max" asChild>
             <Link href='#contact' className="gap-2">
-                <PaperPlaneIcon className="w-5 h-5" />
+                <PaperPlaneIcon className="w-6 h-6" />
                 Let's Talk
             </Link>
         </Button>

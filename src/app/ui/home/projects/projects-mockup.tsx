@@ -26,7 +26,7 @@ export default function ProjectsMockup() {
     return (
         projectMockupProperties.map(property => {
             return (
-                <div key={property.name} className="group relative hover:scale-105 transition-scale duration-150">
+                <div key={property.name} className="group relative">
                     <Image
                         src={property.imageSrc}
                         width={500}

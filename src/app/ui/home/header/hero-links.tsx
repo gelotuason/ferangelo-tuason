@@ -16,8 +16,8 @@ export function LetsTalk() {
 
 export function ScrollDown() {
     return (
-        <Link href='#about'>
-            <FontAwesomeIcon icon={faCircleDown} className="w-8 h-8 animate-bounce" />
+        <Link href='#about' className="flex items-center">
+            <FontAwesomeIcon icon={faCircleDown} className="w-8 h-8" />
         </Link>
     )
 }

@@ -7,11 +7,11 @@ export default function AboutSection() {
         <section id="about" className="container h-max mb-28">
             <h2 className="font-bold">About<span className="text-accent">.</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
-                <div className="cols-span-1 mx-auto grid place-content-between justify-between gap-2">
+                <div className="cols-span-1 order-2 md:order-1 mx-auto grid place-content-between justify-between gap-2">
                     <MyStory />
                     <DownloadCvLink />
                 </div>
-                <div className="hidden md:block cols-span-1 mx-auto">
+                <div className="cols-span-1 order-1 md:order-2 mx-auto">
                     <Image
                         src='/my-photo.jpg'
                         width={400}

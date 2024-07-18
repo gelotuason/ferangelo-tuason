@@ -18,6 +18,7 @@ export default function AboutSection() {
                         height={400}
                         alt="My Photo"
                         className="rounded-full border-2 border-secondary"
+                        priority
                     />
                 </div>
             </div>

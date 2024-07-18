@@ -22,7 +22,7 @@ export default function HeroSection() {
                     className="main-headings text-accent"
                 />
             </h1>
-            <h5 className="max-w-[768px]">Hello there! I'm Gelo, a Front End Developer creating scalable, efficient, and user-friendly web applications.</h5>
+            <h5 className="max-w-[768px]">Hello there! I&apos;m Gelo, a Front End Developer creating scalable, efficient, and user-friendly web applications.</h5>
             <div className="mt-16 flex items-center gap-4">
                 <LetsTalk />
                 <ScrollDown />

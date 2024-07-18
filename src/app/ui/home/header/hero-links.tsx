@@ -8,7 +8,7 @@ export function LetsTalk() {
         <Button variant='default' size="lg" className="w-max" asChild>
             <Link href='#contact' className="gap-2">
                 <FontAwesomeIcon icon={faComments} className="w-8 h-8" />
-                Let's Talk
+                Let&apos;s Talk
             </Link>
         </Button>
     )

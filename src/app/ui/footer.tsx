@@ -19,7 +19,7 @@ export default function Footer() {
             <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight mt-4 mb-4">
                 Gelo<span className="text-accent">.</span>
             </h2>
-            <p className="small-text">© Ferangelo Tuason. All rights reserved.</p>
+            <p>© Ferangelo Tuason. All rights reserved.</p>
         </footer>
     )
 }
@@ -28,23 +28,24 @@ function FooterMenu() {
     const pathname = usePathname();
 
     return (
-        <div>
+        <ul className="flex flex-wrap">
             {
                 footerLinks.map(link => (
-                    <Link
-                        key={link.name}
-                        href={link.href}
-                        className={clsx(
-                            'hover:text-accent inline-block px-4 py-2 small-text',
-                            {
-                                'text-accent': pathname === link.href
-                            }
-                        )}
-                    >
-                        {link.name}
-                    </Link>
+                    <li key={link.name}>
+                        <Link
+                            href={link.href}
+                            className={clsx(
+                                'hover:text-accent inline-block px-4 py-2',
+                                {
+                                    'text-accent': pathname === link.href
+                                }
+                            )}
+                        >
+                            {link.name}
+                        </Link>
+                    </li>
                 ))
             }
-        </div>
+        </ul>
     )
 }

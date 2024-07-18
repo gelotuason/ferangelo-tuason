@@ -3,7 +3,6 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useMediaQuery } from "@/hooks/media-query";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import {
     Drawer,
@@ -26,8 +25,6 @@ const links = [
 ]
 
 export default function Nav() {
-    const isDesktop = useMediaQuery('(min-width: 768px)');
-
     return (
         <nav className="bg-secondary-foreground py-2 container relative z-10 flex items-center justify-between">
             <Link href='/'>
@@ -35,9 +32,8 @@ export default function Nav() {
                     Gelo<span className="text-accent">.</span>
                 </h2>
             </Link>
-            {
-                isDesktop ? <DesktopNavMenu /> : <MobileNavMenu />
-            }
+            <DesktopNavMenu />
+            <MobileNavMenu />
         </nav>
     )
 }
@@ -46,26 +42,27 @@ function DesktopNavMenu() {
     const pathname = usePathname();
 
     return (
-        <div>
+        <ul className="hidden lg:flex lg:items-center">
             {
                 links.map(link => {
                     return (
-                        <Link
-                            key={link.name}
-                            href={link.href}
-                            className={clsx(
-                                'hover:text-accent px-4 py-2 small-text',
-                                {
-                                    'text-accent': pathname === link.href
-                                }
-                            )}
-                        >
-                            {link.name}
-                        </Link>
+                        <li key={link.name}>
+                            <Link
+                                href={link.href}
+                                className={clsx(
+                                    'hover:text-accent px-4 py-2 small-text',
+                                    {
+                                        'text-accent': pathname === link.href
+                                    }
+                                )}
+                            >
+                                {link.name}
+                            </Link>
+                        </li>
                     )
                 })
             }
-        </div>
+        </ul>
     )
 }
 
@@ -74,35 +71,37 @@ function MobileNavMenu() {
     const [open, setOpen] = useState(false);
 
     return (
-        <Drawer open={open} onOpenChange={setOpen} direction="right">
-            <DrawerTrigger>
-                <HamburgerMenuIcon className="w-6 h-6" />
-            </DrawerTrigger>
-            <DrawerContent className="pb-4">
-                <DrawerHeader>
-                    <DrawerTitle className="sr-only" />
-                    <DrawerDescription className="sr-only" />
-                </DrawerHeader>
-                {
-                    links.map(link => {
-                        return (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                onClick={() => setOpen(false)}
-                                className={clsx(
-                                    'hover:text-accent w-max mx-auto px-4 py-2 small-text',
-                                    {
-                                        'text-accent': pathname === link.href
-                                    }
-                                )}
-                            >
-                                {link.name}
-                            </Link>
-                        )
-                    })
-                }
-            </DrawerContent>
-        </Drawer>
+        <div className="block lg:hidden">
+            <Drawer open={open} onOpenChange={setOpen} direction="right">
+                <DrawerTrigger>
+                    <HamburgerMenuIcon className="w-6 h-6" />
+                </DrawerTrigger>
+                <DrawerContent className="pb-4">
+                    <DrawerHeader>
+                        <DrawerTitle className="sr-only" />
+                        <DrawerDescription className="sr-only" />
+                    </DrawerHeader>
+                    {
+                        links.map(link => {
+                            return (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setOpen(false)}
+                                    className={clsx(
+                                        'hover:text-accent w-max mx-auto px-4 py-2 small-text',
+                                        {
+                                            'text-accent': pathname === link.href
+                                        }
+                                    )}
+                                >
+                                    {link.name}
+                                </Link>
+                            )
+                        })
+                    }
+                </DrawerContent>
+            </Drawer>
+        </div>
     )
 }

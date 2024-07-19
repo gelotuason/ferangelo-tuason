@@ -11,11 +11,10 @@ export default function AboutSection() {
                     <MyStory />
                     <DownloadCvLink />
                 </div>
-                <div className="cols-span-1 order-1 md:order-2 mx-auto">
+                <div className="relative p-[30%] cols-span-1 order-1 md:order-2 mx-auto my-auto">
                     <Image
                         src='/my-photo.jpg'
-                        width={400}
-                        height={400}
+                        fill
                         alt="My Photo"
                         className="rounded-full border-2 border-secondary"
                         priority

@@ -7,8 +7,8 @@ import Footer from "@/app/ui/footer";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ferangelo Tuason",
-  description: "Portfolio Website",
+  title: "Ferangelo Tuason - Portfolio",
+  description: "Portfolio Website | Front End Web Developer | ReactJS, NextJS, Tailwind CSS, Shadcn",
 };
 
 export default function RootLayout({

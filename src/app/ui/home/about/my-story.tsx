@@ -10,7 +10,7 @@ export default function MyStory() {
                 by learning the fundamentals and building projects, ranging from simple to complex.
             </p>
             <p>
-                Now, I am ready to contribute to innovative web solutions, driven by my passion for 
+                Now, I am ready to contribute to innovative web solutions, driven by my passion for
                 technology and continuous learning.
             </p>
         </div>

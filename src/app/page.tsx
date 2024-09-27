@@ -1,19 +1,19 @@
-import HeroSection from "@/app/ui/home/header/hero-section";
-import AboutSection from "@/app/ui/home/about/about-section";
-import ServicesSection from "@/app/ui/home/services/services-section";
-import TechstackSection from "@/app/ui/home/techstack/techstack-section";
-import ProjectsSection from "@/app/ui/home/projects/projects-section";
-import ContactSection from "@/app/ui/home/contact/contact-section";
+import Hero from "@/components/hero";
+import About from "@/components/about";
+import Services from "@/components/services";
+import Techstack from "@/components/techstack/techstack";
+import Projects from "@/components/projects/projects";
+import Contact from "@/components/contact/contact";
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <TechstackSection />
-      <ProjectsSection />
-      <ContactSection />
+      <Hero />
+      <About />
+      <Services />
+      <Techstack />
+      <Projects />
+      <Contact />
     </main>
   );
 }

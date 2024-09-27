@@ -1,6 +1,6 @@
 import TechstackLogos from "./techstack-logos";
 
-export default function TechstackSection() {
+export default function Techstack() {
     return (
         <section className="container h-max mt-56 mb-28">
             <h2 className="font-bold">Tech Stack<span className="text-accent">.</span></h2>

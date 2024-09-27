@@ -1,8 +1,8 @@
+import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
-import { ContactLink } from "./contact-links";
 
 
 const email = <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />;
@@ -54,11 +54,10 @@ export default function ContactTabs() {
                 {
                     contactData.map(data => (
                         <TabsContent value={data.tabsValue} key={data.tabsValue}>
-                            <ContactLink
-                                href={data.href}
-                                icon={data.tabsContentIcon}
-                                text={data.tabsContentText}
-                            />
+                            <Link href={data.href} target="_blank" className="flex justify-center items-center gap-2 hover:opacity-70">
+                                {data.tabsContentIcon}
+                                {data.tabsContentText}
+                            </Link>
                         </TabsContent>
                     ))
                 }

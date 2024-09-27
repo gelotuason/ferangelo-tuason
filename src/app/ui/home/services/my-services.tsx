@@ -3,8 +3,8 @@ import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 export function WebDevelopment() {
     return (
-        <div className="grid gap-4 text-center bg-secondary rounded-lg p-4 w-full h-full">
-            <h6 className="flex justify-center items-center gap-2 font-bold">
+        <div className="grid gap-4 bg-secondary rounded-lg p-4 w-full h-full">
+            <h6 className="flex items-center gap-2 font-bold">
                 <FontAwesomeIcon icon={faCode} className="w-8 h-8 bg-primary rounded-full p-1" />
                 WEB DEVELOPMENT
             </h6>
@@ -18,8 +18,8 @@ export function WebDevelopment() {
 
 export function CustomSoftwareSolutions() {
     return (
-        <div className="grid gap-4 text-center bg-accent rounded-lg p-4 w-full h-full">
-            <h6 className="flex justify-center items-center gap-2 font-bold text-">
+        <div className="grid gap-4 bg-accent rounded-lg p-4 w-full h-full">
+            <h6 className="flex items-center gap-2 font-bold text-">
                 <FontAwesomeIcon icon={faLaptopCode} className="w-8 h-8 bg-foreground text-accent rounded-full p-1" />
                 CUSTOM SOFTWARE SOLUTIONS
             </h6>
@@ -33,8 +33,8 @@ export function CustomSoftwareSolutions() {
 
 export function ApiIntegration() {
     return (
-        <div className="grid gap-4 text-center bg-secondary rounded-lg p-4 w-full">
-            <h6 className="flex justify-center items-center gap-2 font-bold">
+        <div className="grid gap-4 bg-secondary rounded-lg p-4 w-full">
+            <h6 className="flex items-center gap-2 font-bold">
                 <FontAwesomeIcon icon={faCode} className="w-8 h-8 bg-primary rounded-full p-1" />
                 API INTEGRATION
             </h6>
@@ -47,8 +47,8 @@ export function ApiIntegration() {
 
 export function ResponsiveWebDesign() {
     return (
-        <div className="grid gap-4 text-center bg-accent rounded-lg p-4 w-full">
-            <h6 className="flex justify-center items-center gap-2 font-bold">
+        <div className="grid gap-4 bg-accent rounded-lg p-4 w-full">
+            <h6 className="flex items-center gap-2 font-bold">
                 <FontAwesomeIcon icon={faLaptopCode} className="w-8 h-8 bg-foreground text-accent rounded-full p-1" />
                 RESPONSIVE WEB DESIGN
             </h6>

@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
-import { LiveURL, SourceCode } from "./project-links";
+import { Button } from "@/components/ui/button";
 
-const projectMockupProperties = [
+const projects = [
     {
         name: 'Employee Management Dashboard',
         imageSrc: '/projects/emd.png',
@@ -15,27 +16,35 @@ const projectMockupProperties = [
         sourceCodeUrl: 'https://github.com/gelotuason/Social_Media_App',
     },
     {
-        name: 'Valosource',
-        imageSrc: '/projects/valosource.png',
-        liveUrl: 'https://project3-api-driven-website-ecru.vercel.app/',
-        sourceCodeUrl: 'https://github.com/gelotuason/Project3_API-Driven_Website'
+        name: 'Blackjack',
+        imageSrc: '/projects/blackjack.png',
+        liveUrl: 'https://blackjack-card-game-tau.vercel.app',
+        sourceCodeUrl: 'https://github.com/gelotuason/blackjack-card-game'
     }
 ]
 
 export default function ProjectsMockup() {
     return (
-        projectMockupProperties.map(property => {
+        projects.map(project => {
             return (
-                <div key={property.name} className="group relative min-h-[320px] md:h-[480px]">
+                <div key={project.name} className="group relative min-h-[320px] md:h-[480px]">
                     <Image
-                        src={property.imageSrc}
+                        src={project.imageSrc}
                         fill
                         alt="Project Mockup"
                         className="object-cover rounded-xl"
                     />
                     <div className="absolute inset-0 text-primary bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 gap-2 flex flex-col justify-center items-center transition-opacity duration-150 rounded-xl">
-                        <LiveURL liveUrl={property.liveUrl} />
-                        <SourceCode sourceCodeUrl={property.sourceCodeUrl} />
+                        <Button variant='secondary' asChild>
+                            <Link href={project.liveUrl} target="_blank">
+                                Live URL
+                            </Link>
+                        </Button>
+                        <Button variant='secondary' asChild>
+                            <Link href={project.sourceCodeUrl} target="_blank">
+                                Github URL
+                            </Link>
+                        </Button>
                     </div>
                 </div>
             )
